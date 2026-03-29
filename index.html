@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>虚拟定位打卡助手 - 科技版</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #0f1225, #1a1f3a);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        .card {
+            background: rgba(25, 30, 55, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 20px rgba(66, 135, 245, 0.1);
+            border: 1px solid rgba(66, 135, 245, 0.15);
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 36px;
+            color: #ffffff;
+            background: linear-gradient(90deg, #4287f5, #60c5ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #b0b8d4;
+            margin-bottom: 45px;
+            line-height: 1.8;
+        }
+
+        .section-title {
+            font-size: 20px;
+            margin: 40px 0 20px;
+            color: #ffffff;
+            padding-left: 12px;
+            border-left: 4px solid #4287f5;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 14px;
+        }
+
+        .app-item {
+            background: rgba(66, 135, 245, 0.1);
+            border: 1px solid rgba(66, 135, 245, 0.2);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            font-size: 15px;
+            color: #e0e0e0;
+            transition: all 0.3s ease;
+        }
+
+        .app-item:hover {
+            background: rgba(66, 135, 245, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(66, 135, 245, 0.15);
+        }
+
+        .feature-list {
+            padding-left: 22px;
+        }
+
+        .feature-list li {
+            margin-bottom: 12px;
+            font-size: 15px;
+            color: #c8d1e8;
+            line-height: 1.7;
+        }
+
+        .contact {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(66, 135, 245, 0.08);
+            border-radius: 14px;
+            text-align: center;
+            border: 1px solid rgba(66, 135, 245, 0.2);
+        }
+
+        .contact-title {
+            font-size: 17px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .wx {
+            font-size: 18px;
+            font-weight: bold;
+            color: #60c5ff;
+            letter-spacing: 1px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 35px;
+            font-size: 13px;
+            color: #7780a0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="title">虚拟定位打卡助手</h1>
+            <p class="subtitle">
+                一键修改全球定位，远程打卡、异地签到<br>
+                无需ROOT、无需越狱，稳定安全，操作极简
+            </p>
+
+            <h3 class="section-title">支持的打卡软件</h3>
+            <div class="app-grid">
+                <div class="app-item">钉钉</div>
+                <div class="app-item">企业微信</div>
+                <div class="app-item">飞书</div>
+                <div class="app-item">微信</div>
+                <div class="app-item">QQ</div>
+                <div class="app-item">学习通</div>
+                <div class="app-item">U校园</div>
+                <div class="app-item">今日校园</div>
+                <div class="app-item">蓝墨云班课</div>
+                <div class="app-item">云班课</div>
+                <div class="app-item">到梦空间</div>
+                <div class="app-item">运动世界校园</div>
+            </div>
+
+            <h3 class="section-title">核心功能</h3>
+            <ul class="feature-list">
+                <li>全球任意位置精准虚拟定位</li>
+                <li>兼容所有主流考勤、签到类APP</li>
+                <li>常用地点一键保存，快速打卡</li>
+                <li>不影响手机正常使用，安全无风险</li>
+                <li>操作简单，无需复杂设置</li>
+            </ul>
+
+            <!-- 联系方式 -->
+            <div class="contact">
+                <div class="contact-title">官方咨询微信</div>
+                <div class="wx">xndw2000</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            本页面仅作功能展示，请勿用于违规用途
+        </div>
+    </div>
+</body>
+</html>
